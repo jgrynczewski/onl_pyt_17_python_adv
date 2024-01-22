@@ -13,7 +13,11 @@ class Account:
     def print_info(self):
         return self.__cash
 
+    # getter
+    def get_cash(self):
+        return self.__cash
 
-a1 = Account(555666777888)
-res = a1.print_info()
-print(res)
+    # setter
+    def set_cash(self, new_amount):
+        if type(new_amount) in [int, float] and new_amount > 0:
+            self.__cash = new_amount
