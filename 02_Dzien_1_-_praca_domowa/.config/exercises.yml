@@ -1,0 +1,6 @@
+exercises:
+    1_Food: { max_points: 0, disabled: true, translations: { pl: 1_Food, en: 1_Food } }
+    2_Price: { max_points: 0, disabled: true, translations: { pl: 2_Price, en: 2_Price } }
+    3_Students: { max_points: 0, disabled: true, translations: { pl: 3_Students, en: 3_Students } }
+    4_Calculator: { max_points: 0, disabled: true, translations: { pl: 4_Calculator, en: 4_Calculator } }
+    5_Book: { max_points: 0, disabled: true, translations: { pl: 5_Book, en: 5_Book } }

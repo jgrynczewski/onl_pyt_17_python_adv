@@ -1,0 +1,5 @@
+exercises:
+    1_ShoppingCart: { max_points: 0, disabled: true, translations: { pl: 1_ShoppingCart, en: 1_ShoppingCart } }
+    2_Price: { max_points: 0, disabled: true, translations: { pl: 2_Price, en: 2_Price } }
+    3_Square: { max_points: 0, disabled: true, translations: { pl: 3_Square, en: 3_Square } }
+    '4_Price - drugi sposób': { max_points: 0, disabled: true, translations: { pl: '4_Price - drugi sposób', en: '4_Price - second way' } }
