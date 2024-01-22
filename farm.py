@@ -7,12 +7,26 @@ def func_name():
 # Camel case (klas)
 # ToJesteNowaNazwaMojejKlasy
 class Cow:
+    def __init__(self, name, age=0):
+        self.type = 'mammals'
+        self.name = name
+        self.age = age
+
     def speak(self):
-        print("Muuuuuuuuuuu")
+        print(f"Muuuuuuuuuuu. Cześć jestem {self.name}")
 
+    def get_older(self):
+        self.age += 1
 
-c1 = Cow()
-c2 = Cow()
+# ============================
+# ============================
 
-c1.speak()
-c2.speak()
+first_cow = Cow("mućka", 2)
+second_cow = Cow("milka")
+
+first_cow.speak()
+second_cow.speak()
+
+print(first_cow.age)
+first_cow.get_older()
+print(first_cow.age)
