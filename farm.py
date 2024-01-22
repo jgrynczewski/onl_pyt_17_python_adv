@@ -37,6 +37,12 @@ class Cow:
         result = self.age + other_cow.age
         print(f"Razem mamy {result}")
 
+    # Reprezentacja napisowa
+    def __str__(self):
+        return f"Krowa o imieniu {self.name} i wieku {self.age}"
+
+    def __len__(self):
+        return int(self.age / 3)
 
 class Place:
     def __init__(self, type, name):
@@ -84,3 +90,14 @@ second_cow.visit_place(place1)
 second_cow.visit_place(place5)
 
 second_cow.sum_age(first_cow)
+
+print(first_cow)
+
+# Poznaliśmy już trzy metody magincze (dunder method)
+# __new__
+# __init__
+# __str__
+# __len__
+
+print(len(first_cow))
+print(len(second_cow))
