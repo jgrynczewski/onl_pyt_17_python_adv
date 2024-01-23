@@ -2,8 +2,8 @@
 
 # modyfikatory dostępu
 # cash - składowa (metoda/atrybut) publiczna (śmiało)
-# _cash - składowa chroniona (wchodzisz na własną odpowiedzialność)
-# __cash - składowa prywatna  (wstęp wzbroniony)
+# _cash - składowa chroniona (wchodzisz na własną odpowiedzialność) - składowa dostępna wewnątrz klasy i wewnątrz wszystkich klas po niej dziedziczących (tzn. wszystkich jej podklas)
+# __cash - składowa prywatna  (wstęp wzbroniony) - składowa dostępna tylko wewnątrz klasy
 
 class Account:
     def __init__(self, account_number):
