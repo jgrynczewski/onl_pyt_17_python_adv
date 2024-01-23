@@ -21,3 +21,4 @@ class Account:
     def set_cash(self, new_amount):
         if type(new_amount) in [int, float] and new_amount > 0:
             self.__cash = new_amount
+

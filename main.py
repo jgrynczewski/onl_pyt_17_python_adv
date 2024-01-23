@@ -13,3 +13,6 @@ print(a.get_cash())
 
 a.set_cash("ala ma kota")
 print(a.get_cash())
+
+a.cash
+a.cash = 100
