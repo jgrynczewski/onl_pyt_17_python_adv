@@ -3,7 +3,7 @@ import unittest
 import chess
 
 
-TEST_PAWNS = False
+TEST_PAWNS = True
 TEST_KNIGHTS = False
 TEST_QUEENS = False
 TEST_KINGS = False

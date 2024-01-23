@@ -36,4 +36,51 @@ def show(chessboard):
 
 
 class Chessboard:
-    pass
+    def __init__(self):
+        self.color = "white"
+        self.board = [
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+            [None, None, None, None, None, None, None, None],
+        ]
+
+
+class Pawn:
+    def __init__(self, color, x, y):
+        self.color = color
+        self.x = x
+        self.y = y
+
+    def list_allowed_moves(self, chessboard):
+        allowed_moves = []
+
+        if self.color == "white" and self.y+1 < len(chessboard.board):
+            allowed_moves.append(
+                (self.x, self.y+1)
+            )
+
+            if self.y == 1:
+                allowed_moves.append(
+                    (self.x, self.y+2)
+                )
+
+        if self.color == "black" and self.y-1 >= 0:
+            allowed_moves.append(
+                (self.x, self.y-1)
+            )
+
+            if self.y == len(chessboard.board)-2:
+                allowed_moves.append(
+                    (self.x, self.y-2)
+                )
+
+        return allowed_moves
+
+    def move(self, x, y):
+        self.x = x
+        self.y = y
