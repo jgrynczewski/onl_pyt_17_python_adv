@@ -1,4 +1,4 @@
-# property
+# property (alternatywna notacja/syntactic sugar)
 class Account:
     def __init__(self, account_number):
         self.number = account_number
